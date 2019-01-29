@@ -1,4 +1,7 @@
 # App-PET-ite
-Automatic Animal Feeder
 
+Project Description
+
+
+Project Overveiw
 ![](Project%20Overveiw.png)
