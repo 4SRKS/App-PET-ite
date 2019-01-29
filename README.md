@@ -1,5 +1,5 @@
 # App-PET-ite
-![](Logo.png)
+![](Logo.png)<br/>
 **Project Description**<br/>
 
 **Project Overveiw**
