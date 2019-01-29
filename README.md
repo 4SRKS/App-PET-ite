@@ -2,7 +2,7 @@
 ![](Logo.png)<br/>
 **Project Description**<br/>
 
-**Project Overveiw**
+**Project Overveiw**<br/>
 The basic layout of the project is given in the schematic below<br/>
 
 ![](Project%20Overveiw.png)
