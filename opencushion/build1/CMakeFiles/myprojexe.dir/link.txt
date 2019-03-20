@@ -1,0 +1,1 @@
+/usr/bin/c++      CMakeFiles/myprojexe.dir/hx711.cpp.o  -o myprojexe -rdynamic -lwiringPi 
