@@ -297,10 +297,15 @@ int SpiWriteAndRead (int spi_device, unsigned char *data, int length)
 class MFRC522 {
 unsigned char addr, val;
 public:
+void MFRC522_Reset();
 void MFRC522_Init();
 void Write_MFRC522(unsigned char addr, unsigned char val);
 unsigned char Read_MFRC522(unsigned char addr, unsigned char val);
 };
+
+void MFRC522::MFRC522_Reset(){
+  Write_MFRC522(CommandReg, PCD_RESETPHASE);
+} 
 
 void MFRC522::MFRC522_Init(){
   gpio_export(NRSTPD);
