@@ -11,22 +11,21 @@
  *
  * Cross-compile with cross-gcc -I/path/to/cross-kernel/include
  */
-
-#include <stdint.h>
-#include <unistd.h>
-#include <stdio.h>
-#include <stdlib.h>
-#include <fcntl.h>
-#include <sys/ioctl.h>
-#include <linux/types.h>
-#include <linux/spi/spidev.h>
-#include "gpio-sysfs.h"
-#include "gpio-sysfs.cpp"
+//#include <stdint.h>
+//#include <unistd.h>
+//#include <stdio.h>
+//#include <stdlib.h>
+//#include <fcntl.h>
+//#include <sys/ioctl.h>
+//#include <linux/types.h>
+//#include <linux/spi/spidev.h>
+//#include "gpio-sysfs.h"
+//#include "gpio-sysfs.cpp"
 #include <cmath>
-#include <iostream>
-using namespace std;
+//#include <iostream>
+//using namespace std;
 
-unsigned int drdy_GPIO = 22;
+unsigned int m_GPIO = 26;
 
 //Function declaration of PWM
 int *Motor_PWM(unsigned int frequency,double duty)
@@ -37,12 +36,12 @@ Timeinterval[1]=floor((1000000/frequency)*(1-duty));
 return Timeinterval;
 }
 
-int main()
+int motor_Run()
 {
 //Setting GPIO 22 as output
-gpio_export(drdy_GPIO);
-gpio_set_dir(drdy_GPIO,1);
-gpio_set_value(drdy_GPIO,1);
+gpio_export(m_GPIO);
+gpio_set_dir(m_GPIO,1);
+gpio_set_value(m_GPIO,1);
 
 unsigned int freq;
 freq=1;
@@ -53,10 +52,11 @@ int *duration;
 while(1)
 {
 duration=Motor_PWM(freq,d);
-gpio_set_value(drdy_GPIO,1);
+gpio_set_value(m_GPIO,1);
 usleep(*duration);
-gpio_set_value(drdy_GPIO,0);
+gpio_set_value(m_GPIO,0);
 usleep(*(duration+1));
 }
 return 0;
 }
+
