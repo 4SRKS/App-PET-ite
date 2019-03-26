@@ -20,17 +20,19 @@
  *
  * *********************************************************************/
 #include "mcp3008Spi.h"
+#include "mcp3008Spi.cpp"
 
 using namespace std;
-int main(void)
+
+int WaterLevel(void)
 {
     mcp3008Spi a2d("/dev/spidev0.0", SPI_MODE_0, 1000000, 8);
-    int i = 20;
+    int i = 1;
         int a2dVal = 0;
     int a2dChannel = 0;
         unsigned char data[3];
 
-    while(1)
+    while(i>0)
     {
         data[0] = 1;  //  first byte transmitted -> start bit
         data[1] = 0b10000000 |( ((a2dChannel & 7) << 4)); // second byte transmitted -> (SGL/DIF = 1, D2=D1=D0=0)
@@ -51,3 +53,4 @@ int main(void)
     }
     return 0;
 }
+
