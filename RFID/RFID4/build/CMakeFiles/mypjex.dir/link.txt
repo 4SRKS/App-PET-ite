@@ -1,0 +1,1 @@
+/usr/bin/c++      CMakeFiles/mypjex.dir/thread.cpp.o  -o mypjex -rdynamic -lwiringPi 
