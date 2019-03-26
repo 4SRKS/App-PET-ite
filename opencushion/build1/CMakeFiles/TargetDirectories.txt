@@ -1,3 +1,0 @@
-/home/pi/opencushion/build1/CMakeFiles/rebuild_cache.dir
-/home/pi/opencushion/build1/CMakeFiles/edit_cache.dir
-/home/pi/opencushion/build1/CMakeFiles/myprojexe.dir
