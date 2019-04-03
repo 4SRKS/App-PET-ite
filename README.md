@@ -7,13 +7,15 @@ The below schematic provides an outline for an automatic pet feeder. It dispense
 **Project Overveiw**<br/>
 The basic layout of the project is given in the schematic below<br/>
 
-![](Images/Project%20Overveiw.png)
+![](Images/Project%20Overveiw.png)<br/>
+For this DIY project, we are using the Raspberry pi 3 Model B+ along with the folowing componenets list. 
 
-**Component List**<br/>
+**Electrical Component List**<br/>
 Analog water sensor<br/>
 Analog Weight Sensor (HX711)<br/>
 Analog-to-digital Converter (MCP3008)<br/> 
 RFID transmitter and receiver <br/>
-DC toy Motor<br/>
-Key Pad<br/>
-LCD Screen<br/>
+DC Motor 6V 150 RPM<br/>
+
+
+**Social Media Profiles**<br/>
