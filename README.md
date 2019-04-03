@@ -11,7 +11,7 @@ The basic layout of the project is given in the schematic below<br/>
 For this DIY project, we are using the Raspberry pi 3 Model B+ along with the folowing componenets list. 
 
 **Electrical Component List**<br/>
-<img src="Images/WaterSensor.png" width="200">
+1) Analog water sensor                                                     <img src="Images/WaterSensor.png" width="200"> <br/> 
 Analog water sensor<br/>
 Analog Weight Sensor (HX711)<br/>
 Analog-to-digital Converter (MCP3008)<br/> 
