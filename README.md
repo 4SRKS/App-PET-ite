@@ -11,9 +11,9 @@ The basic layout of the project is given in the schematic below<br/>
 
 **Component List**<br/>
 Analog water sensor<br/>
-Analog Weight Sensor<br/>
-Analog-to-digital Converters<br/> 
+Analog Weight Sensor (HX711)<br/>
+Analog-to-digital Converter (MCP3008)<br/> 
 RFID transmitter and receiver <br/>
-Servo Motor<br/>
+DC toy Motor<br/>
 Key Pad<br/>
 LCD Screen<br/>
