@@ -30,3 +30,9 @@ For this DIY project, we are using the Raspberry pi 3 Model B+ along with the fo
 <img src="Images/FoodBowl.png" width="200"> <br/>
 
 **Electrical Connections**<br/>
+
+
+**Flowchart**<br/>
+
+
+**PCB Design**<br/>
