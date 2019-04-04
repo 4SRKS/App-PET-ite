@@ -1,1 +1,0 @@
-/home/pi/RFID/RFID2/RFID/build/CMakeFiles/mypjex.dir
