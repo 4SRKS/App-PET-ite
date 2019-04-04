@@ -13,6 +13,9 @@ For this DIY project, we are using the Raspberry pi 3 Model B+ along with the fo
 **Electrical Component List**<br/>
 1) Analog water sensor. Can be purchased at the link: https://www.amazon.co.uk/HALJIA-Sensor-Detection-Surface-Arduino/dp/B06XQ496SW/ref=pd_day0_hl_107_3?_encoding=UTF8&pd_rd_i=B06XQ496SW&pd_rd_r=b7f2527c-2314-11e9-846f-6dde6419884f&pd_rd_w=CWTOB&pd_rd_wg=PMdJh&pf_rd_p=b082d07b-aaea-4f40-9ff3-d27463f747d7&pf_rd_r=WXCNWY6XG73C9BBJ3EXM&psc=1&refRID=WXCNWY6XG73C9BBJ3EXM 
 <img src="Images/WaterSensor.png" width="200"> <br/>
+2) Analog-to-digital Converter (MCP3008). Can be purchased at the link: https://www.amazon.co.uk/Adafruit-MCP3008-856-Converter-Interface/dp/B00NAY3RB2/ref=olp_product_details?_encoding=UTF8&me= 
+<img src="Images/MCP3008.png" width="200"> <br/>
+
 Analog water sensor<br/>
 Analog Weight Sensor (HX711)<br/>
 Analog-to-digital Converter (MCP3008)<br/> 
