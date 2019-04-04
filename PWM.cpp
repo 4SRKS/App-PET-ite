@@ -1,16 +1,3 @@
-/*
- * AD7705 test program for the Raspberry PI
- *
- * Copyright (c) 2007  MontaVista Software, Inc.
- * Copyright (c) 2007  Anton Vorontsov <avorontsov@ru.mvista.com>
- * Copyright (c) 2013-2018  Bernd Porr <mail@berndporr.me.uk>
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation; either version 2 of the License.
- *
- * Cross-compile with cross-gcc -I/path/to/cross-kernel/include
- */
 //#include <stdint.h>
 //#include <unistd.h>
 //#include <stdio.h>
@@ -25,7 +12,7 @@
 //#include <iostream>
 //using namespace std;
 
-unsigned int m_GPIO = 26;
+unsigned int m_GPIO = 23;
 
 //Function declaration of PWM
 int *Motor_PWM(unsigned int frequency,double duty)
@@ -59,4 +46,13 @@ usleep(*(duration+1));
 }
 return 0;
 }
+
+void motor_Run_time(unsigned int time){
+gpio_export(m_GPIO);
+gpio_set_dir(m_GPIO,1);
+gpio_set_value(m_GPIO,1);
+usleep(time);
+gpio_set_value(m_GPIO,0);
+}
+
 
