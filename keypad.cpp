@@ -156,3 +156,24 @@ int Keys_verify_weight()
    else{return 0;}
 }
 
+int Keys_time()
+{
+int time;
+cout<<"Please enter the time between feedings in hours: "<<endl;
+time=keypad(12,16,20,21,26,19,13,6);
+cout<<"You have entered: "<<time<<" hours"<<endl;
+return time;
+}
+
+int Keys_verify_time(){
+   int b;
+   int ret=0;
+   cout<<"If time value is correct please press A"<<endl;
+   //cout<<"If value is incorrect please press B"<<endl;
+   b=keypad(12,16,20,21,26,19,13,6);
+   if(b==12)
+        {return 1;}
+   else{return 0;}
+}
+
+
