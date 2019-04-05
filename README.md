@@ -36,3 +36,10 @@ For this DIY project, we are using the Raspberry pi 3 Model B+ along with the fo
 
 
 **PCB Design**<br/>
+<img src="Images/PCB.png" width="500"> <br/>
+The figure above gives a preveiw of the PCB design. It includes the circuitry for Water Level Sensor, the ADC (MCP3008), the load cell (HX711), the key pad and the motordrive circuit. The PCB can be fabricated by printing the pdf file in the PCB folder and then using that layout to make to make a PCB step-by-step. A tutorial to make a PCB can be found at the following link
+```
+https://maker.pro/pcb/tutorial/how-to-make-a-printed-circuit-board-pcb
+```
+
+
