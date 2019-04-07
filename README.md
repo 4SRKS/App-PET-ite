@@ -16,7 +16,7 @@ The below schematic provides an outline for an automatic pet feeder. It dispense
 
 
 ## Component List<br/>
-For this DIY project, we are using the Raspberry pi 3 Model B+ along with the folowing componenets list.<br/> <br/>
+For this DIY project, we are using the Raspberry pi 3 Model B+ along with the following [Component List](https://github.com/RabiyaF/App-PET-ite/wiki/Component-List).<br/> <br/>
 **Electrical Components List** <br/>
 **1)** 1 Analog water sensor<br/>
 **2)** 1 Analog-to-digital Converter [MCP3008] <br/>
