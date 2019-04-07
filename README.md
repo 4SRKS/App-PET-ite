@@ -31,7 +31,7 @@ For this DIY project, we are using the Raspberry pi 3 Model B+ along with the fo
 ![](Images/Connections_Pi.png)<br/>
 
 ## Flowchart<br/>
-
+![](Images/FlowChart_App-PET-ite.png)<br/>
 
 ## PCB Design <br/>
 <img src="Images/PCB.png" width="500"> <br/>
