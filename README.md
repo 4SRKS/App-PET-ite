@@ -25,7 +25,7 @@ For this DIY project, we are using the Raspberry pi 3 Model B+ along with the fo
 6) **1 Pet Food Bowl**. Can be purchased at the following link: https://www.amazon.co.uk/miaosun-Double-Stainless-Non-spill-Design/dp/B073J8F2S8/ref=sr_1_7?crid=34COUBAHATHG5&keywords=pet+food+bowl&qid=1552319954&s=gateway&sprefix=pet+food+bo%2Caps%2C163&sr=8-7 <br/>
 
 ## Schematic<br/>
-
+![](Images/Schematic_App-PET-ite.png)<br/>
 
 ## Electrical Connections<br/>
 
