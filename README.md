@@ -28,7 +28,7 @@ For this DIY project, we are using the Raspberry pi 3 Model B+ along with the fo
 ![](Images/Schematic_App-PET-ite.png)<br/>
 
 ## Electrical Connections<br/>
-![](Images/Connections.png)<br/>
+
 
 ## Flowchart<br/>
 
