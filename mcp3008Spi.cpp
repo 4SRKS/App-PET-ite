@@ -140,3 +140,4 @@ mcp3008Spi::mcp3008Spi(std::string devspi, unsigned char spiMode, unsigned int s
 mcp3008Spi::~mcp3008Spi(){
     this->spiClose();
 }
+
