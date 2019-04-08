@@ -44,13 +44,13 @@ int WaterLevel(void)
                 a2dVal = (data[1]<< 8) & 0b1100000000; //merge data[1] & data[2] to get result
                 a2dVal |=  (data[2] & 0xff);
         sleep(1);
-        cout << "The Result is: " << a2dVal << endl;
-        if(a2dVal<=100)
-        {
-        cout<< "Water Level Low for your Pet"<<endl;
-        }
+        //cout << "The Result is: " << a2dVal << endl;
+        //if(a2dVal<=100)
+        //{
+        //cout<< "Water Level Low for your Pet"<<endl;
+        //}
         i--;
     }
-    return 0;
+    return a2dVal;
 }
 
