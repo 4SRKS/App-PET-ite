@@ -1,0 +1,4 @@
+Scanning dependencies of target mypjex
+[ 50%] Building CXX object CMakeFiles/mypjex.dir/thread.cpp.o
+[100%] Linking CXX executable mypjex
+[100%] Built target mypjex
