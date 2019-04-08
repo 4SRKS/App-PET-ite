@@ -46,4 +46,5 @@ The figure above gives a preveiw of the PCB design. It includes the circuitry fo
 https://maker.pro/pcb/tutorial/how-to-make-a-printed-circuit-board-pcb
 ```
 
-
+## Mechanical Design <br/>
+<img src="Images/Full Assembly.JPG" width="500"> <br/>
