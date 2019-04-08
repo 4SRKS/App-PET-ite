@@ -51,5 +51,5 @@ https://maker.pro/pcb/tutorial/how-to-make-a-printed-circuit-board-pcb
 <img src="Images/Full Assembly.JPG" width="500"> <br/>
 Shown above are a screenshot of the 3D CAD model and a photo of the final mechanical assembly.  The frame is made simply out of wood, and the clamps for the food and water tanks are made out of rigid PVC pipe with slots made in one side.  Everything else non-electrical is easily sourced in most supermarkets.  
 
-<img src="Images/Dispenser1.JPG" width="500"> <br/><img src="Images/Dispenser2.JPG" width="500"> <br/>
+<img src="Images/Dispenser1.JPG" width="400"> <br/><img src="Images/Dispenser2.JPG" width="400"> <br/>
 The only other part requiring significant manufacturing is the dispenser mechanism, which was 3D printed.  Shown above is a screenshot of this part.  For the .stl file of this component and the SolidWorks files of all the components shown in the full assembly, see the [SolidWorks/Mark 3](https://github.com/RabiyaF/App-PET-ite/tree/master/Solidworks/Mark%203) repository.  For a full walkthrough of how we assembled the feeder, see the [Step-by-Step Assembly] page.
