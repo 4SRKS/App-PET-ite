@@ -55,4 +55,3 @@ usleep(time);
 gpio_set_value(m_GPIO,0);
 }
 
-
