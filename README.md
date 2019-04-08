@@ -17,6 +17,7 @@ The below schematic provides an outline for an automatic pet feeder. It dispense
 
 ## Component List<br/>
 For this DIY project, we are using the Raspberry pi 3 Model B+ along with the following [Component List](https://github.com/RabiyaF/App-PET-ite/wiki/Component-List).<br/> <br/>
+
 **Electrical Components List** <br/>
 **1)** 1 Analog water sensor<br/>
 **2)** 1 Analog-to-digital Converter [MCP3008] <br/>
@@ -48,3 +49,4 @@ https://maker.pro/pcb/tutorial/how-to-make-a-printed-circuit-board-pcb
 
 ## Mechanical Design <br/>
 <img src="Images/Full Assembly.JPG" width="500"> <br/>
+Shown above are a screenshot of the 3D CAD model and a photo of the final mechanical assembly.  The frame is made simply out of wood, and the clamps for the food and water tanks are made out of rigid PVC pipe with slots made in one side.  Everything else non-electrical is easily sourced in most supermarkets.  The only other part requiring significant manufacturing is the dispenser mechanism, which was 3D printed.  Shown below is a screenshot of this part.  For the .stl file of this component and the SolidWorks files of all the components shown in the full assembly, see the [Step-by-Step Assembly] page.
