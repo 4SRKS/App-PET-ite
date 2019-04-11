@@ -1,7 +1,7 @@
 ![](Images/Logo.png)<br/>
 ## Social Media Profiles<br/>
 **Youtube:**https://www.youtube.com/channel/UCCG3uzNam2p5G15IFZl3F-A<br/>
-**Facebook:**https://www.facebook.com/Ap-PET-ite-2111281949162044/?modal=admin_todo_tour<br/>
+**Facebook:**https://www.facebook.com/Ap-PET-ite-2111281949162044/?view_public_for=2111281949162044<br/>
 
 ## Project Overveiw<br/>
 The basic layout of the project is given in the figure below<br/>
@@ -52,4 +52,4 @@ Shown above are a screenshot of the 3D CAD model and a photo of the final mechan
 <img src="Images/Dispenser1.JPG" width="400"><img src="Images/Dispenser2.JPG" width="450"> <br/>
 The only other part requiring significant manufacturing is the dispenser mechanism, which was 3D printed.  Shown above are screenshots of this part.  For the .stl file of this component and the SolidWorks files of all the components shown in the full assembly, see the [SolidWorks/Mark 3](https://github.com/RabiyaF/App-PET-ite/tree/master/Solidworks/Mark%203) repository.  
 
-For a full walkthrough of how we assembled the feeder, see the [Step-by-Step Assembly] page.
+For a full walkthrough of how we assembled the feeder, see the [Step-by-Step Assembly](https://github.com/RabiyaF/App-PET-ite/wiki/Step-by-Step-Mechanical-Assembly) page.
