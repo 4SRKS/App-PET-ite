@@ -1,9 +1,7 @@
 ![](Images/Logo.png)<br/>
 ## Social Media Profiles<br/>
-**Youtube:**<br/>
-**Twitter:**<br/>
-**Instagram:**<br/>
-**Facebook:**<br/>
+**Youtube:**<br/>https://www.youtube.com/channel/UCCG3uzNam2p5G15IFZl3F-A
+**Facebook:**<br/>https://www.facebook.com/Ap-PET-ite-2111281949162044/?modal=admin_todo_tour
 
 ## Project Overveiw<br/>
 The basic layout of the project is given in the figure below<br/>
