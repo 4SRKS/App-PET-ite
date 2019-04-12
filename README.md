@@ -3,7 +3,7 @@
 **Youtube:**https://www.youtube.com/channel/UCCG3uzNam2p5G15IFZl3F-A<br/>
 **Facebook:**https://www.facebook.com/Ap-PET-ite-2111281949162044/?view_public_for=2111281949162044<br/>
 
-## Project Overview<br/>
+## Project Overveiw<br/>
 The basic layout of the project is given in the figure below<br/>
 ![](Images/Overveiw_App-PET-ite.png)<br/>
 
@@ -24,7 +24,8 @@ For this DIY project, we are using the Raspberry pi 3 Model B+ along with the fo
 **5)** 5 1K Resistors <br/>
 **6)** 1 TIP 122 <br/>
 **7)** 1 LED <br/>
-**8)** 1 Diode 1N4004 <br/><br/>
+**8)** 1 Diode 1N4004 <br/>
+**9)** Connector wires (F-F, M-F)<br/><br/>
 **Mechcanical Components List**<br/>
 **1)** 1 DC Motor [6 Volts-150 RPM]<br/>
 **2)** 1 Pet Food Bowl<br/> 
@@ -39,8 +40,8 @@ For this DIY project, we are using the Raspberry pi 3 Model B+ along with the fo
 ![](Images/FlowChart_App-PET-ite.png)<br/>
 
 ## PCB Design <br/>
-<img src="Images/PCB.png" width="500"> <br/>
-The figure above gives a preveiw of the PCB design. It includes the circuitry for Water Level Sensor, the ADC (MCP3008), the load cell (HX711), the key pad and the motordrive circuit. The PCB can be fabricated by printing the pdf file in the PCB folder and then using that layout to make a PCB step-by-step. A tutorial to make a PCB can be found at the following link
+![](Images/PCB_Mounted.png)<br/>
+The figure above gives a preveiw of the PCB design. It is a double layered PCB Design. It includes the circuitry for Water Level Sensor, the ADC (MCP3008), the load cell (HX711), the key pad and the motordrive circuit. The PCB can be fabricated by printing the pdf files in the PCB folder and then using that layout to make a PCB step-by-step. A tutorial to make a PCB can be found at the following link. For a doubled layered PCB design the alignment of the two layers must be perfect. While aligning PCB use the text on the left bottom as a guide to align the top and bottom halves.
 ```
 https://maker.pro/pcb/tutorial/how-to-make-a-printed-circuit-board-pcb
 ```
