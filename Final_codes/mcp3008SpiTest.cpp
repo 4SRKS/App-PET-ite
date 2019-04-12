@@ -1,3 +1,7 @@
+/********************************************************************************************************
+* The following library for MCP3008 can be found at https://github.com/halherta/RaspberryPi-mcp3008Spi 
+*********************************************************************************************************/
+
 /***********************************************************************
  * mcp3008SpiTest.cpp. Sample program that tests the mcp3008Spi class.
  * an mcp3008Spi class object (a2d) is created. the a2d object is instantiated
