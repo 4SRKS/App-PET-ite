@@ -3,7 +3,7 @@
 **Youtube:**https://www.youtube.com/channel/UCCG3uzNam2p5G15IFZl3F-A<br/>
 **Facebook:**https://www.facebook.com/Ap-PET-ite-2111281949162044/?view_public_for=2111281949162044<br/>
 
-## Project Overveiw<br/>
+## Project Overview<br/>
 The basic layout of the project is given in the figure below<br/>
 ![](Images/Overveiw_App-PET-ite.png)<br/>
 
