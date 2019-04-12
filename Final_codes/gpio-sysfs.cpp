@@ -1,3 +1,7 @@
+/*************************************************************************************************************************
+* The following library for setting GPIOs as inputs and outputs can be found at https://github.com/berndporr/gpio-sysfs 
+**************************************************************************************************************************/
+
 /* Copyright (c) 2011, RidgeRun
  * Copyright (c) 2014, Bernd Porr
  * All rights reserved.
