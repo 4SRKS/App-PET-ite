@@ -1,3 +1,7 @@
+/********************************************************************************************************
+* The following library for MCP3008 can be found at https://github.com/halherta/RaspberryPi-mcp3008Spi 
+*********************************************************************************************************/
+
 /***********************************************************************
  * This header file contains the mcp3008Spi class definition.
  * Its main purpose is to communicate with the MCP3008 chip using
