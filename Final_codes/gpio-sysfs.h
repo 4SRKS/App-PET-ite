@@ -1,3 +1,7 @@
+/*************************************************************************************************************************
+* The following library for setting GPIOs as inputs and outputs can be found at https://github.com/berndporr/gpio-sysfs 
+**************************************************************************************************************************/
+
 #ifndef GPIOSYSFS
 #define GPIOSYSFS
 
