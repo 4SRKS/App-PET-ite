@@ -1,3 +1,6 @@
+/********************************************************************
+* Header Files
+*********************************************************************/
 #include <iostream>
 #include <thread>
 #include "keypad.cpp"
@@ -5,26 +8,25 @@
 #include "mcp3008SpiTest.cpp"
 #include "hx711.cpp"
 #include "main.cpp"
-
-
 #include "QApplication"
 #include "QPushButton"
 #include "QtGui"
 #include <QInputDialog>
 #include <QTranslator>
-
 using namespace std;
+
+/*********************************
+* Declaring Global Variable
+**********************************/
 int awake=0;
 
 int abc();
 int qt_call ();
 
-void Motor()
-{
-unsigned int b;
-motor_Run_time(67000);
-}
-
+/*********************************************************************************
+* Declaring the thread that will periodically check water level in the food bowl
+* Will warn the pet owner if water level is too low
+**********************************************************************************/
 void Water_Level_Update()
 {
 int c;
@@ -40,45 +42,61 @@ if(awake==1){
 }
 }
 
+/*********************************************************************************
+* Declaring the thread that will count down to the next feeding time 
+* Once the counter end food will be dispensed once again
+**********************************************************************************/
 void Timekeeper(int hours)
 {
 int seconds=hours*10;
 for(int t=seconds;t>=0;t--){
 usleep(1000000);
-cout<< "timer"<<t<<endl;
+//cout<< "timer"<<t<<endl;
 }
-cout<<"I am awake"<<endl;
+//cout<<"I am awake"<<endl;
 awake=1;
 }
 
-void counter(){
- while(1){
- 	if(awake==0){
-             cout<<"Sleeping"<<endl;
-             usleep(1000000);
-             	     }
-        else{break;}
-         }
-}
+/***************************************************************
+* Declaring a function to read the output from the load cell 
+****************************************************************/
 void load_cell()
 {
 int d;
-
 d=abc();
-
 }
 
-
+/**********************************************************************************************
+* The main function for App-PET-ite
+* Welcomes the user to App-PET-ite
+* Launches UI for the user to enter the weight of food to be dispensed for the Pet in grams
+* Launches UI for the user to enter the time between food times in hours
+* Asks the user to verify the input for weight and time
+* Dispenses the amuont of food specified by the user
+* Starts thread 1- The count down thread
+*           This thread counts down to the next feeding time
+* Starts thread 2- The water level sensor update
+*            This thread periodically measures the water level in the food bowl
+* Once the counter has counted down food is dispensed again
+* This continues till all the food has been dispensed
+***********************************************************************************************/
 int main(int argc,char *argv[])
 {
-
-//Initializing the Food Dispenser through user input 
+/****************************	
+* Welcome to App-PET-ite
+*****************************/
 cout<<"Welcome to App-PET-ite"<<endl;
+	
+/*******************************
+* Initializing the Qt UI 
+********************************/
 int qt_weight,qt_time;
 QApplication app(argc, argv);
 QTextStream cout(stdout);
 
-// Declarations of variables
+/********************************
+* Declarations of variables
+*********************************/
 int answer = 0;
 QGraphicsScene scene;
 QGraphicsView view(&scene);
@@ -91,10 +109,20 @@ label.show();
 
 do {
 	// local variables to the loop:
+	
+	/***********************************************
+	* Launching the UI for inputing weight in grams
+	************************************************/
 	int qt_weight = 0;
 	qt_weight = QInputDialog::getInt(0, "Appetite UI","Enter the weight to be dispensed:", 0);
-    int qt_time = 0;
-    qt_time = QInputDialog::getInt(0, "Appetite UI","Enter the time for next dispense in hours:", 1);
+	/**********************************************
+	* Launching the UI for inputing time
+	***********************************************/
+        int qt_time = 0;
+        qt_time = QInputDialog::getInt(0, "Appetite UI","Enter the time for next dispense in hours:", 1);
+	/**********************************************
+	* Verifying the User inputs
+	***********************************************/
 	QString response = QString("You have entered weight as %1 and time as %2.\n Have you entered the right values").arg(qt_weight).arg(qt_time);
 	answer = QMessageBox::question(0, "Play again?", response,
 	QMessageBox::Yes | QMessageBox::No);
@@ -133,6 +161,9 @@ weight = qt_weight;
 time = qt_time;
 int thrs = 40;
 
+/*****************************************
+* Dispensing the food for the first time
+******************************************/
  while(1)
 {
 	 int b;
@@ -150,8 +181,15 @@ int thrs = 40;
      }
  }		 
 		 cout<<"Food set to desired limit"<<endl;
+	
+/********************************
+* Dispensing food once again
+*********************************/
 while(1)
 {		 
+	         /********************************
+		 * Starting the threads
+		 *********************************/
 		 std::thread first (Timekeeper,time);
 		 std::thread second (Water_Level_Update);
 		 
