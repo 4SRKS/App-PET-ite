@@ -4,11 +4,20 @@
 #include "PWM.cpp"
 #include "mcp3008SpiTest.cpp"
 #include "hx711.cpp"
+#include "main.cpp"
+
+
+#include "QApplication"
+#include "QPushButton"
+#include "QtGui"
+#include <QInputDialog>
+#include <QTranslator>
 
 using namespace std;
 int awake=0;
 
 int abc();
+int qt_call ();
 
 void Motor()
 {
@@ -26,14 +35,14 @@ if (c<100){
 	cout<<" refill to max level"<<endl;
 }
 usleep(15000000);
-if(awake=1){
+if(awake==1){
 	break;}
 }
 }
 
 void Timekeeper(int hours)
 {
-int seconds=hours*60;
+int seconds=hours*10;
 for(int t=seconds;t>=0;t--){
 usleep(1000000);
 cout<< "timer"<<t<<endl;
@@ -60,15 +69,43 @@ d=abc();
 }
 
 
-int main()
+int main(int argc,char *argv[])
 {
- 
 
- 
- //Initializing the Food Dispenser through user input 
- cout<<"Welcome to App-PET-ite"<<endl;
+//Initializing the Food Dispenser through user input 
+cout<<"Welcome to App-PET-ite"<<endl;
+int qt_weight,qt_time;
+QApplication app(argc, argv);
+QTextStream cout(stdout);
 
- //First getting the Weight Input
+// Declarations of variables
+int answer = 0;
+QGraphicsScene scene;
+QGraphicsView view(&scene);
+QGraphicsPixmapItem item(QPixmap("/home/pi/local_repo/App-PET-ite/Images/Logo.png"));
+scene.addItem(&item);
+view.show();
+
+QLabel label("<img src='Logo.jpg' />");
+label.show();
+
+do {
+	// local variables to the loop:
+	int qt_weight = 0;
+	qt_weight = QInputDialog::getInt(0, "Appetite UI","Enter the weight to be dispensed:", 0);
+    int qt_time = 0;
+    qt_time = QInputDialog::getInt(0, "Appetite UI","Enter the time for next dispense in hours:", 1);
+	QString response = QString("You have entered weight as %1 and time as %2.\n Have you entered the right values").arg(qt_weight).arg(qt_time);
+	answer = QMessageBox::question(0, "Play again?", response,
+	QMessageBox::Yes | QMessageBox::No);
+	
+    } while (answer == QMessageBox::No);
+ 
+//Calling the QT window
+//qt_weight,qt_time = qt_call();
+cout<<qt_weight<< endl<<qt_time<<endl;
+ 
+ /*First getting the Weight Input
  int weight;
  int status_w;
  while(1){
@@ -89,19 +126,25 @@ int main()
  		break;}
  }
  cout<<"Time successfully stored"<<endl;
+ */
+usleep(10000);
+int weight, time;
+weight = qt_weight;
+time = qt_time;
+int thrs = 40;
 
  while(1)
- {
+{
 	 int b;
 	 b=abc();
-	 cout<<"weight"<<(b-45)<<endl;
-	 usleep(1000);
-	 if((b-45)<=weight)
+	 cout<<"weight"<<(b-thrs)<<endl;
+	 usleep(1000000);
+	 if((b-thrs)<=weight)
 	 {
 		motor_Run_time(67000); 
 		//usleep(1000);
 	 }
-	 if((b-45)>weight)
+	 if((b-thrs)>weight)
 	 {
 		 break;
      }
@@ -114,20 +157,20 @@ while(1)
 		 
 		 first.join();
 		 second.join();
-		 usleep(1000);
+		 usleep(1000000);
 		 awake = 0;
 		 int c;
 	     c=abc();
-	     cout<<(c-45)<<endl;
+	     cout<<(c-thrs)<<endl;
 	     usleep(1000);
-	     if((c-45)<=weight)
+	     if((c-thrs)<=weight)
 	     {
 		 motor_Run_time(67000); 
 		 //usleep(1000);
 	     }
 	     
 		 //usleep(1000);
-		 if((c-45)>weight)
+		 if((c-thrs)>weight)
 		 {
 			cout<<"Food set to desired limit"<<endl;
 			
@@ -136,9 +179,8 @@ while(1)
 	     
 	 
 }
-	 
+
  return 0;
-}
 
 
 
