@@ -1,21 +1,21 @@
 ![](Images/Logo.png)<br/>
 ## Social Media Profiles<br/>
-**Youtube:**https://www.youtube.com/channel/UCCG3uzNam2p5G15IFZl3F-A<br/>
-**Facebook:**https://www.facebook.com/Ap-PET-ite-2111281949162044/?view_public_for=2111281949162044<br/>
+[**Youtube**](https://www.youtube.com/channel/UCCG3uzNam2p5G15IFZl3F-A) 
+[**Facebook**](https://www.facebook.com/Ap-PET-ite-2111281949162044/?view_public_for=2111281949162044)<br/>
 
 ## Project Overveiw<br/>
 The basic layout of the project is given in the figure below<br/>
 ![](Images/Overveiw_App-PET-ite.png)<br/>
 
 ## Project Description<br/>
-The below schematic provides an outline for an automatic pet feeder. It dispenses food and liquid in a controlled manner, and montitors the amount of food/liquid. The pet is provided a RFID fob, which, in the vicinity of the the RFID reader, instructs the controller to dispense food with respect to an earlier programmed quantity. The water level and load are measured by sensors and provided to the Raspberry pi using SPI interface. The user is provided with a keypad and a LCD Panel to interact with the system.
-
-## Project Prerequisites
-
+The schematic above provides an overview of the project concept. The central component of the project design is a Raspberry Pi. The Pi is connected to peripheral devices that are used to control the food for a given Pet. The concept is not Pet specific and can be used to make an Automatic feeder for popular pets like cats or dogs. The design includes two analog sensors to measure the weight and the water level. These sensors are connected to the Raspberry Pi through an ADC. SPI communication protocol is used to get analog values from the two sensors. A DC motor is controlled using a motor drive circuit that includes a transistor. The user can interact with the Automatic Pet feeder through a user interface.<br/>     
 
 ## Component List<br/>
-For this DIY project, we are using the Raspberry pi 3 Model B+ along with the following [Component List](https://github.com/RabiyaF/App-PET-ite/wiki/Component-List).<br/> <br/>
-
+For this DIY project, we are using the Raspberry pi 3 Model B+ along with the following [Component List](https://github.com/RabiyaF/App-PET-ite/wiki/Component-List).<br/> 
+**Mechcanical Components List**<br/>
+**1)** 1 DC Motor [6 Volts-150 RPM]<br/>
+**2)** 1 Pet Food Bowl<br/> 
+**3)** Wooden Planks<br/>
 **Electrical Components List** <br/>
 **1)** 1 Analog water sensor<br/>
 **2)** 1 Analog-to-digital Converter [MCP3008] <br/>
@@ -25,32 +25,58 @@ For this DIY project, we are using the Raspberry pi 3 Model B+ along with the fo
 **6)** 1 TIP 122 <br/>
 **7)** 1 LED <br/>
 **8)** 1 Diode 1N4004 <br/>
-**9)** Connector wires (F-F, M-F)<br/><br/>
-**Mechcanical Components List**<br/>
-**1)** 1 DC Motor [6 Volts-150 RPM]<br/>
-**2)** 1 Pet Food Bowl<br/> 
+**9)** Connector wires (F-F, M-F)<br/>
+After the Mechanical and Electrical Components have been procured, The following steps need to be followed to assemble App-PET-ite<br/>
 
-## Schematic<br/>
-![](Images/Schematic_App-PET-ite.png)<br/>
+# The Assembly 
+## Mechanical Design Assembly <br/>
+<img src="Images/Full Assembly.JPG" width="1000"> <br/>
+Shown above are a screenshot of the 3D CAD model and a photo of the final mechanical assembly.  The frame is made simply out of wood, and the clamps for the food and water tanks are made out of rigid PVC pipe with slots made in one side.  Everything else non-electrical is easily sourced in most supermarkets.  
 
-## Electrical Connections<br/>
-![](Images/Connections_Pi.png)<br/>
+<img src="Images/Dispenser1.JPG" width="430" height="430"><img src="Images/Dispenser2.JPG" width="430" height="430"> <br/>
+The only other part requiring significant manufacturing is the dispenser mechanism, which was 3D printed.  Shown above are screenshots of this part.  For the .stl file of this component and the SolidWorks files of all the components shown in the full assembly, see the [SolidWorks/Mark 3](https://github.com/RabiyaF/App-PET-ite/tree/master/Solidworks/Mark%203) repository.  
 
-## Flowchart<br/>
-![](Images/FlowChart_App-PET-ite.png)<br/>
+For a full walkthrough of how we assembled the feeder, see the [Step-by-Step Assembly](https://github.com/RabiyaF/App-PET-ite/wiki/Step-by-Step-Mechanical-Assembly) page. <br/>
 
-## PCB Design <br/>
+## Electrical Design Assembly <br/>
+The first step of the electrical assembly is the PCB Fabrication.
+### PCB Design <br/>
 ![](Images/PCB_Mounted.png)<br/>
-The figure above gives a preveiw of the PCB design. It is a double layered PCB Design. It includes the circuitry for Water Level Sensor, the ADC (MCP3008), the load cell (HX711), the key pad and the motordrive circuit. The PCB can be fabricated by printing the pdf files in the PCB folder and then using that layout to make a PCB step-by-step. A tutorial to make a PCB can be found at the following link. For a doubled layered PCB design the alignment of the two layers must be perfect. While aligning PCB use the text on the left bottom as a guide to align the top and bottom halves.
+The figure above gives a preveiw of the PCB design. It is a double layered PCB Design. It includes the circuitry for Water Level Sensor, the ADC (MCP3008), the load cell (HX711), the key pad and the motordrive circuit. The PCB can be fabricated by printing the pdf files in the Double sided PCB folder and then using that layout to make a PCB step-by-step. A tutorial to make a PCB can be found at the following link. For a doubled layered PCB design the alignment of the two layers must be perfect. While aligning PCB use the text on the left bottom as a guide to align the top and bottom halves. For a double sided PCB the process discribed in the tutorial must be repeated twice.<br/>
 ```
 https://maker.pro/pcb/tutorial/how-to-make-a-printed-circuit-board-pcb
 ```
+### Schematic<br/>
+The figure below gives the schematic on wich the PCB design is based.<br/>
+![](Images/Schematic_App-PET-ite.png)<br/>
 
-## Mechanical Design <br/>
-<img src="Images/Full Assembly.JPG" width="500"> <br/>
-Shown above are a screenshot of the 3D CAD model and a photo of the final mechanical assembly.  The frame is made simply out of wood, and the clamps for the food and water tanks are made out of rigid PVC pipe with slots made in one side.  Everything else non-electrical is easily sourced in most supermarkets.  
+### Electrical Connections<br/>
+A summary of the electrical connection is given below. <br/> 
+![](Images/Connections_Pi.png)<br/>
 
-<img src="Images/Dispenser1.JPG" width="400"><img src="Images/Dispenser2.JPG" width="450"> <br/>
-The only other part requiring significant manufacturing is the dispenser mechanism, which was 3D printed.  Shown above are screenshots of this part.  For the .stl file of this component and the SolidWorks files of all the components shown in the full assembly, see the [SolidWorks/Mark 3](https://github.com/RabiyaF/App-PET-ite/tree/master/Solidworks/Mark%203) repository.  
+## Flowchart<br/>
+The Flow chart below gives the overveiw of the code. First, the user initializes App-PET-ite with inputs for weight and time between two subsequent feeding times. The food is then dispensed based on user input. Then two threads run simulataneously. One counts down the time to the next time food is to be dispensed. The other thread periodically measures the Water level.  
+![](Images/Final_FlowChart.png)<br/>
 
-For a full walkthrough of how we assembled the feeder, see the [Step-by-Step Assembly](https://github.com/RabiyaF/App-PET-ite/wiki/Step-by-Step-Mechanical-Assembly) page.
+## Project Prerequisites
+```
+sudo apt install git
+Raghul add the other packeges here like Wiring Pi, Cmake etc
+```
+## To Run
+```
+git clone https://github.com/RabiyaF/App-PET-ite
+cd Final_codes/build
+cmake ..
+make
+./mypjex
+```
+
+## Acknowledgements
+The follwing libraries were used to build the code
+```
+https://github.com/berndporr/gpio-sysfs
+https://github.com/halherta/RaspberryPi-mcp3008Spi
+Raghul add the library for HX711
+```
+
