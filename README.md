@@ -47,7 +47,7 @@ The figure above gives a preveiw of the PCB design. It is a double layered PCB D
 https://maker.pro/pcb/tutorial/how-to-make-a-printed-circuit-board-pcb
 ```
 ### Schematic<br/>
-The figure below gives the schematic on wich the PCB design is based.<br/>
+The figure below gives the schematic on which the PCB design is based.<br/>
 ![](Images/Schematic_App-PET-ite.png)<br/>
 
 ### Electrical Connections<br/>
@@ -55,7 +55,7 @@ A summary of the electrical connection is given below. <br/>
 ![](Images/Connections_Pi.png)<br/>
 
 ## Flowchart<br/>
-The Flow chart below gives the overveiw of the code. First, the user initializes App-PET-ite with inputs for weight and time between two subsequent feeding times. The food is then dispensed based on user input. Then two threads run simulataneously. One counts down the time to the next time food is to be dispensed. The other thread periodically measures the Water level.  
+The Flow chart below gives the overveiw of the code. First, the user initializes App-PET-ite with inputs for weight and time between two subsequent feeding times. The food is then dispensed based on user input. Then two threads run simulataneously. One counts down to the next time food is to be dispensed. The other thread periodically measures the Water level.  
 ![](Images/Final_FlowChart.png)<br/>
 
 ## Project Prerequisites
