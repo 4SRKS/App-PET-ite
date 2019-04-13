@@ -1,4 +1,4 @@
-<img src="Images/Logo.png" width="120" height="120"><br/>
+<img src="Images/Logo.png" width="150" height="150"><br/>
 ## Social Media Profiles<br/>
 [**Youtube**](https://www.youtube.com/channel/UCCG3uzNam2p5G15IFZl3F-A) 
 [**Facebook**](https://www.facebook.com/Ap-PET-ite-2111281949162044/?view_public_for=2111281949162044)<br/>
