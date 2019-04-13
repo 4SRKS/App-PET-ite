@@ -1,4 +1,4 @@
-![](Images/Logo.png)<br/>
+<img src="Images/Logo.png" width="120" height="120"><br/>
 ## Social Media Profiles<br/>
 [**Youtube**](https://www.youtube.com/channel/UCCG3uzNam2p5G15IFZl3F-A) 
 [**Facebook**](https://www.facebook.com/Ap-PET-ite-2111281949162044/?view_public_for=2111281949162044)<br/>
@@ -11,11 +11,11 @@ The basic layout of the project is given in the figure below<br/>
 The schematic above provides an overview of the project concept. The central component of the project design is a Raspberry Pi. The Pi is connected to peripheral devices that are used to control the food for a given Pet. The concept is not Pet specific and can be used to make an Automatic feeder for popular pets like cats or dogs. The design includes two analog sensors to measure the weight and the water level. These sensors are connected to the Raspberry Pi through an ADC. SPI communication protocol is used to get analog values from the two sensors. A DC motor is controlled using a motor drive circuit that includes a transistor. The user can interact with the Automatic Pet feeder through a user interface.<br/>     
 
 ## Component List<br/>
-For this DIY project, we are using the Raspberry pi 3 Model B+ along with the following [Component List](https://github.com/RabiyaF/App-PET-ite/wiki/Component-List).<br/> 
+For this DIY project, we are using the Raspberry pi 3 Model B+ along with the following [Component List](https://github.com/RabiyaF/App-PET-ite/wiki/Component-List).<br/> <br/>
 **Mechcanical Components List**<br/>
 **1)** 1 DC Motor [6 Volts-150 RPM]<br/>
 **2)** 1 Pet Food Bowl<br/> 
-**3)** Wooden Planks<br/>
+**3)** Wooden Planks<br/><br/>
 **Electrical Components List** <br/>
 **1)** 1 Analog water sensor<br/>
 **2)** 1 Analog-to-digital Converter [MCP3008] <br/>
