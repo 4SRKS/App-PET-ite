@@ -79,4 +79,11 @@ https://github.com/berndporr/gpio-sysfs
 https://github.com/halherta/RaspberryPi-mcp3008Spi
 Raghul add the library for HX711
 ```
+## Team Members
 
+* **Raghul** - *List of Responsibilties* 
+* **Scott** - *List of Responsibilities* 
+* **Rabiya Farooq** - *List of Responsibilites* 
+
+## License
+Raghul please add something over here
