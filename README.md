@@ -76,8 +76,8 @@ make
 * **Raghul** - *List of Responsibilties* 
 * **Stuart Shilliday** - *List of Responsibilities* 
 * **Rabiya Farooq**  
-*Programming Contribution- The ADC (MCP3008), Keypad, Motordrive and threads* 
-*Electronic Contribution- PCB hardware design and testing*
+*Programming Contribution-* The ADC (MCP3008), Keypad, Motordrive and threads <br/>
+*Electronic Contribution-* PCB hardware design and testing <br/>
 
 ## Acknowledgements
 The follwing libraries were used to build the code
