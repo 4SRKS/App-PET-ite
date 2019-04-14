@@ -71,6 +71,13 @@ cmake ..
 make
 ./mypjex
 ```
+## Team Members
+
+* **Raghul** - *List of Responsibilties* 
+* **Stuart Shilliday** - *List of Responsibilities* 
+* **Rabiya Farooq**  
+*Programming Contribution- The ADC (MCP3008), Keypad, Motordrive and threads* 
+*Electronic Contribution- PCB hardware design and testing*
 
 ## Acknowledgements
 The follwing libraries were used to build the code
@@ -79,11 +86,6 @@ https://github.com/berndporr/gpio-sysfs
 https://github.com/halherta/RaspberryPi-mcp3008Spi
 Raghul add the library for HX711
 ```
-## Team Members
-
-* **Raghul** - *List of Responsibilties* 
-* **Stuart Shilliday** - *List of Responsibilities* 
-* **Rabiya Farooq** - *List of Responsibilites* 
 
 ## License
-Raghul please add something over here
+Raghul please add here
