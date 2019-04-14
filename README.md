@@ -5,7 +5,7 @@
 
 ## Project Overveiw<br/>
 The basic layout of the project is given in the figure below<br/>
-![](Images/Overveiw_App-PET-ite.png)<br/>
+![](Images/Overveiw.png)<br/>
 
 ## Project Description<br/>
 The schematic above provides an overview of the project concept. The central component of the project design is a Raspberry Pi. The Pi is connected to peripheral devices that are used to control the food for a given Pet. The concept is not Pet specific and can be used to make an Automatic feeder for popular pets like cats or dogs. The design includes two analog sensors to measure the weight and the water level. These sensors are connected to the Raspberry Pi through an ADC. SPI communication protocol is used to get analog values from the two sensors. A DC motor is controlled using a motor drive circuit that includes a transistor. The user can interact with the Automatic Pet feeder through a user interface.<br/>     
