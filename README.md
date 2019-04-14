@@ -82,7 +82,7 @@ Raghul add the library for HX711
 ## Team Members
 
 * **Raghul** - *List of Responsibilties* 
-* **Scott** - *List of Responsibilities* 
+* **Stuart Shilliday** - *List of Responsibilities* 
 * **Rabiya Farooq** - *List of Responsibilites* 
 
 ## License
