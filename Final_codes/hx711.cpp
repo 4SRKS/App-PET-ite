@@ -1,3 +1,7 @@
+/*************************************************************************************************************************
+* The following library for the load cell HX711 was hosted at https://github.com/dangrie158/opencushion
+**************************************************************************************************************************/
+
 #include <stdio.h>
 #include <inttypes.h>
 #include <wiringPi.h>
@@ -120,22 +124,13 @@ float HX711::getScale(){
 	return this->mScale;
 }
 
+
 int loadcell(){
 	HX711 sensor(7, 0, 0);
 	sensor.tare(25);
         sensor.setOffset(35000);
 	sensor.setScale(500);
-	int i=1;
-	
-	//i++;
-	//printf("%d%s\n", i,"iteration");
-
-	//printf("%f\n%s\n", sensor.getUnits(),"unit");
-	//printf("%f\n%s\n", sensor.getRawValue(10),"raw");
-	//printf("%d\n%s\n", sensor.readAverage(30),"av");
-	//printf("%d\n%s\n", sensor.getOffset(),"offset");
-/*		printf("%d\n", sensor.getOffset());*/
-	 return sensor.getUnits();  
+	return sensor.getUnits();  
 	
 }
 
