@@ -79,11 +79,13 @@ make
 *Initial Concept Contribution* - Concept pitch presentation <br/>
 *Mechanical Contribution* - Design, manufacture, iteration and assembly.  Step-by-Step Mechanical Assembly Wiki <br/>
 *Social Media Contribution* - YouTube and Facebook pages; photography, videography, video editing and uploading <br/>
-* **Rabiya Farooq** <br/>  
+* **Rabiya Farooq** 
 *Initial Concept Contribution* - Slides for pitch presentation <br/>
 *Programming Contribution-* The ADC (MCP3008), Keypad, Motordrive and threads <br/>
 *Electronic Contribution-* PCB hardware design and testing <br/>
 
+## Reporting a Bug
+Use this link-[App-PET-ite Bug](https://github.com/RabiyaF/App-PET-ite/issues) to contact the team members to fix issues with software. <br/>
 ## Acknowledgements
 The follwing libraries were used to build the code
 ```
@@ -93,6 +95,3 @@ Raghul add the library for HX711
 ```
 ## License
 Raghul please add here
-
-## Reporting a Bug
-Use this link-[App-PET-ite Bug](https://github.com/RabiyaF/App-PET-ite/issues) to contact us to fix issues with software. 
