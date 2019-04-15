@@ -61,6 +61,9 @@ The figure below gives the schematic on which the PCB design is based.<br/>
 A summary of the electrical connection is given below. <br/> 
 ![](Images/Connections_Pi.png)<br/>
 
+## Ensuring Safety of Pet<br/>
+Because of the nature of the project, It is recommneded to use the PCB layouts rather than using the schematic to build the circuit on a breadboard. All the wires must be taped down and all the electrical components should be out of the reach of the Pet. 
+
 ## Flowchart<br/>
 The Flow chart below gives the overveiw of the code. First, the user initializes App-PET-ite with inputs for weight and time between two subsequent feeding times. The food is then dispensed based on user input. Then two threads run simulataneously. One counts down to the next time food is to be dispensed. The other thread periodically measures the Water level.  
 ![](Images/Final_FlowChart.png)<br/>
