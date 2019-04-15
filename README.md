@@ -14,19 +14,24 @@ The schematic above provides an overview of the project concept. The central com
 ## Component List<br/>
 For this DIY project, we are using the Raspberry pi 3 Model B+ along with the following [Component List](https://github.com/RabiyaF/App-PET-ite/wiki/Component-List).<br/> <br/>
 **Mechcanical Components List**<br/>
-**1)** 1 DC Motor [6 Volts-150 RPM]<br/>
-**2)** 1 Pet Food Bowl<br/> 
+**1)** One DC Motor [6 Volts-150 RPM]<br/>
+**2)** One Pet Food Bowl<br/> 
 **3)** Wooden Planks<br/><br/>
 **Electrical Components List** <br/>
-**1)** 1 Analog water sensor<br/>
-**2)** 1 Analog-to-digital Converter [MCP3008] <br/>
-**3)** 1 4x4 Matrix Keypad <br/>
-**4)** 1 Analog Weight Sensor [HX711] with a maximum weight of 2 kgs <br/>
-**5)** 5 1K Resistors <br/>
-**6)** 1 TIP 122 <br/>
-**7)** 1 LED <br/>
-**8)** 1 Diode 1N4004 <br/>
+**1)** One Analog water sensor<br/>
+**2)** One Analog-to-digital Converter [MCP3008] <br/>
+**3)** One 4x4 Matrix Keypad <br/>
+**4)** One Analog Weight Sensor [HX711] with a maximum weight of 2 kgs <br/>
+**5)** Five 1K Resistors <br/>
+**6)** One TIP 122 or TIP 121 (NPN Transistor) <br/>
+**7)** One LED <br/>
+**8)** One Diode 1N4004 <br/>
 **9)** Connector wires (F-F, M-F)<br/>
+**10)** Two 20 Pin Female Connectors with a spacing of 0.1 in <br/>
+**11)** One 8 pin Male connector with a spacing of 0.1 in <br/> 
+**12)** One 4 pin Male connector with a spacing of 0.1 in <br/>
+**13)** One 3 pin Male connector with a spacing of 0.1 in <br/>
+**14)** One 16 pin IC holder with a spacing of 0.1 in between legs <br/>
 After the Mechanical and Electrical Components have been procured, The following steps need to be followed to assemble App-PET-ite<br/>
 
 # The Assembly 
@@ -60,7 +65,7 @@ A summary of the electrical connection is given below. <br/>
 The Flow chart below gives the overveiw of the code. First, the user initializes App-PET-ite with inputs for weight and time between two subsequent feeding times. The food is then dispensed based on user input. Then two threads run simulataneously. One counts down to the next time food is to be dispensed. The other thread periodically measures the Water level.  
 ![](Images/Final_FlowChart.png)<br/>
 
-## Project Prerequisites
+## Install the following packages using sudo apt-get <package name>
 ```
 git 2.21.0
 cmake-3.14.2.tar.gz
@@ -77,7 +82,7 @@ make
 ## Team Members
 
 * **Raghul** <br/> 
-1.App-PET-ite logo <br/>
+*Initial Concept Contribution* -App-PET-ite logo <br/>
 2.Load cell setup and configuration<br/>
 3.UI interface, Multithreading, Github repository maintenance.<br/>
 4.Integration testing, Unit testing<br/>
@@ -87,7 +92,7 @@ make
 *Social Media Contribution* - YouTube and Facebook pages; photography, videography, video editing and uploading <br/>
 * **Rabiya Farooq**<br/> 
 *Initial Concept Contribution* - Slides for pitch presentation <br/>
-*Programming Contribution-* The ADC (MCP3008), Keypad, Motordrive and threads <br/>
+*Programming Contribution-* The ADC (MCP3008) for water level sensing, 4x4 Matrix Keypad, Motordrive control and threads for Water level sensor and timer <br/>
 *Electronic Contribution-* PCB hardware design and testing <br/>
 
 ## Reporting a Bug
@@ -102,12 +107,21 @@ https://git.drogon.net/?p=wiringPi;a=summary
 ```
 ## License
 GNU General Public License V3<br/>
-GNU LESSER GENERAL PUBLIC LICENSE V3
+GNU LESSER GENERAL PUBLIC LICENSE V3<br/>
 
 ## Survey
 PLease participate in this survey to give insight and feedback on Ap-PET-ite for future releases.<br/>
 [Ap-PET-ite Survey](https://docs.google.com/forms/d/e/1FAIpQLSdCzQ5AlhaeOhvKFN2g8C_C-drHnjaCQEvHc7EBsoWmiBpvOg/viewform?usp=sf_link)
 
-## Version
-Ap-PET-ite 1.0
-* Dispenses food of given mass at given intervals, and maintains water level, with inputs given from a UI.
+## Release Strategy
+**Ap-PET-ite v1.0**
+* Dispenses food of given mass at given intervals, and maintains water level, with inputs given from a UI. <br/>
+Release date - 15th April 2019 <br/>
+**Ap-PET-ite v2.0** 
+* Depending on Survey results and general feedback, Version 2 will have aditional funtionalities of either including one or both of the following components. <br/>
+**1)** RFID Sensor (MFRC 522) for Pet identification and differentiation to allow feeding to be customized for each pet in a multipet household <br/>
+**2)** LCD Screen (ST 7735 128x160 pixel 1.8 inch Display) for the user to input and update the setting directly on to the Ap-PET-ite hardware <br/>
+**Ap-PET-ite v3.0**
+* The last version released will enable hardware control using a Mobile App and will directly update the Pet owner (through the App) incase food or water is running low. 
+
+
