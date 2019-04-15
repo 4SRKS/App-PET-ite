@@ -61,8 +61,9 @@ The Flow chart below gives the overveiw of the code. First, the user initializes
 
 ## Project Prerequisites
 ```
-git
+git 2.21.0
 cmake-3.14.2.tar.gz
+Qt 4.8.7
 ```
 ## To Run
 ```
@@ -99,6 +100,6 @@ https://github.com/dangrie158/opencushion
 https://git.drogon.net/?p=wiringPi;a=summary
 ```
 ## License
-GNU General Public License V3
+GNU General Public License V3<br/>
 GNU LESSER GENERAL PUBLIC LICENSE V3
 
