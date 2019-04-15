@@ -61,8 +61,8 @@ The Flow chart below gives the overveiw of the code. First, the user initializes
 
 ## Project Prerequisites
 ```
-sudo apt install git
-Raghul add the other packeges here like Wiring Pi, Cmake etc
+git
+cmake-3.14.2.tar.gz
 ```
 ## To Run
 ```
@@ -96,6 +96,7 @@ The follwing libraries were used to build the code
 https://github.com/berndporr/gpio-sysfs
 https://github.com/halherta/RaspberryPi-mcp3008Spi
 https://github.com/dangrie158/opencushion
+https://git.drogon.net/?p=wiringPi;a=summary
 ```
 ## License
 GNU General Public License V3
