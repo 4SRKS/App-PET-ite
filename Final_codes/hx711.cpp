@@ -120,10 +120,10 @@ float HX711::getScale(){
 	return this->mScale;
 }
 
-int abc(){
+int loadcell(){
 	HX711 sensor(7, 0, 0);
 	sensor.tare(30);
-    sensor.setOffset(35000);
+        sensor.setOffset(35000);
 	sensor.setScale(500);
 	int i=1;
 	
