@@ -8,7 +8,8 @@ The basic layout of the project is given in the figure below<br/>
 ![](Images/Overveiw.png)<br/>
 
 ## Project Description<br/>
-The schematic above provides an overview of the project concept. The central component of the project design is a Raspberry Pi. The Pi is connected to peripheral devices that are used to control the food for a given Pet. The concept is not Pet specific and can be used to make an Automatic feeder for popular pets like cats or dogs. The design includes two analog sensors to measure the weight and the water level. These sensors are connected to the Raspberry Pi through an ADC. SPI communication protocol is used to get analog values from the two sensors. A DC motor is controlled using a motor drive circuit that includes a transistor. The user can interact with the Automatic Pet feeder through a user interface.<br/>     
+The schematic above provides an overview of the project concept. The central component of the project design is a Raspberry Pi. The Pi is connected to peripheral devices that are used to control the food for a given Pet. The concept is not Pet specific and can be used to make an Automatic feeder for popular pets like cats or dogs. The design includes two analog sensors to measure the weight and the water level. These sensors are connected to the Raspberry Pi through an ADC. SPI communication protocol is used to get analog values from the two sensors. A DC motor is controlled using a motor drive circuit that includes a transistor. The user can interact with the Automatic Pet feeder through a user interface.<br/> 
+
 
 ## Component List<br/>
 For this DIY project, we are using the Raspberry pi 3 Model B+ along with the following [Component List](https://github.com/RabiyaF/App-PET-ite/wiki/Component-List).<br/> <br/>
@@ -104,7 +105,9 @@ GNU General Public License V3<br/>
 GNU LESSER GENERAL PUBLIC LICENSE V3
 
 ## Survey
-PLease participate in this survey to give insight and feedback on Ap-PET-ite.<br/>
+PLease participate in this survey to give insight and feedback on Ap-PET-ite for future releases.<br/>
 [Ap-PET-ite Survey](https://docs.google.com/forms/d/e/1FAIpQLSdCzQ5AlhaeOhvKFN2g8C_C-drHnjaCQEvHc7EBsoWmiBpvOg/viewform?usp=sf_link)
 
-
+## Version
+Ap-PET-ite 1.0
+* Dispenses food of given mass at given intervals, and maintains water level.
