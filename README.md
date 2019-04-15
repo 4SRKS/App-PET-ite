@@ -74,7 +74,10 @@ make
 ## Team Members
 
 * **Raghul** - *List of Responsibilties* 
-* **Stuart Shilliday** - *List of Responsibilities* 
+* **Stuart Shilliday** 
+*Initial Concept Contribution* - Concept pitch presentation
+*Mechanical Contribution* - Design, manufacture, iteration and assembly.  Step-by-Step Mechanical Assembly Wiki <br/>
+*Social Media Contribution* - YouTube and Facebook pages; photography, videography, video editing and uploading <br/>
 * **Rabiya Farooq**  
 *Programming Contribution-* The ADC (MCP3008), Keypad, Motordrive and threads <br/>
 *Electronic Contribution-* PCB hardware design and testing <br/>
