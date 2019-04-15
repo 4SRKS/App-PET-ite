@@ -84,7 +84,7 @@ make
 ```
 
 ## User Interface
-The user interface is given below. First, the user is promted to enter the weight of food to be dispensed in hours. Then the user is promted to enter the time between subsequent feedings. Then the user is asked verify the data entry.
+The user interface is given below. First, the user is promted to enter the weight of food to be dispensed in hours. Then the user is promted to enter the time between subsequent feedings. Then the user is asked verify the data entry. Once the data is entered, the correct amount of food will be dispensed after the specified time intervals for the Pet to enjoy and no further input is needed from the Pet owner after that.
 <img src="Images/UI1.png" width="280" height="300"> <img src="Images/UI2.png" width="280" height="300">  <img src="Images/UI3.png" width="280" height="300"> <br/>  
 
 ## Team Members
