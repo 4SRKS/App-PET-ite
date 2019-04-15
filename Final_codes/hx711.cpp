@@ -122,18 +122,18 @@ float HX711::getScale(){
 
 int loadcell(){
 	HX711 sensor(7, 0, 0);
-	sensor.tare(30);
+	sensor.tare(25);
         sensor.setOffset(35000);
 	sensor.setScale(500);
 	int i=1;
 	
-		//i++;
-		//printf("%d%s\n", i,"iteration");
-		
-		//printf("%f\n%s\n", sensor.getUnits(),"unit");
-		//printf("%f\n%s\n", sensor.getRawValue(10),"raw");
-		//printf("%d\n%s\n", sensor.readAverage(30),"av");
-		//printf("%d\n%s\n", sensor.getOffset(),"offset");
+	//i++;
+	//printf("%d%s\n", i,"iteration");
+
+	//printf("%f\n%s\n", sensor.getUnits(),"unit");
+	//printf("%f\n%s\n", sensor.getRawValue(10),"raw");
+	//printf("%d\n%s\n", sensor.readAverage(30),"av");
+	//printf("%d\n%s\n", sensor.getOffset(),"offset");
 /*		printf("%d\n", sensor.getOffset());*/
 	 return sensor.getUnits();  
 	
