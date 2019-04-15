@@ -13,18 +13,18 @@
 #include "QtGui"
 #include <QInputDialog>
 #include <QTranslator>
+
 using namespace std;
 
-/*********************************
-* Declaring Global Variable
-**********************************/
+/****************************************************
+* Declaring Global Variable and Function Prototype
+*****************************************************/
 int awake=0;
 
 int loadcell();
-int qt_call ();
 
 /*********************************************************************************
-* Declaring the thread that will periodically check water level in the food bowl
+* Declaring the thread that will periodically check water level in the bowl
 * Will warn the pet owner if water level is too low
 **********************************************************************************/
 void Water_Level_Update()
@@ -95,7 +95,7 @@ QApplication app(argc, argv);
 QTextStream cout(stdout);
 
 /********************************
-* Declarations of variables
+* Declarations of Qt objects
 *********************************/
 int answer = 0;
 QGraphicsScene scene;
@@ -111,12 +111,12 @@ do {
 	// local variables to the loop:
 	
 	/***********************************************
-	* Launching the UI for inputing weight in grams
+	* Launching the UI for receiving weight in grams
 	************************************************/
 	int qt_weight = 0;
 	qt_weight = QInputDialog::getInt(0, "Appetite UI","Enter the weight to be dispensed:", 0);
 	/**********************************************
-	* Launching the UI for inputing time
+	* Launching the UI for receiving time in hours
 	***********************************************/
         int qt_time = 0;
         qt_time = QInputDialog::getInt(0, "Appetite UI","Enter the time for next dispense in hours:", 1);
@@ -124,7 +124,7 @@ do {
 	* Verifying the User inputs
 	***********************************************/
 	QString response = QString("You have entered weight as %1 and time as %2.\n Have you entered the right values").arg(qt_weight).arg(qt_time);
-	answer = QMessageBox::question(0, "Play again?", response,
+	answer = QMessageBox::question(0, "Enter again?", response,
 	QMessageBox::Yes | QMessageBox::No);
 	
     } while (answer == QMessageBox::No);
@@ -133,6 +133,10 @@ cout<<qt_weight<< endl<<qt_time<<endl;
 int weight, time;
 weight = qt_weight;
 time = qt_time;
+	
+/*****************************************************************
+Determining threshold for callibrating the reading from load cell
+*****************************************************************/
 int thrs = 40;
 
 /*****************************************
@@ -170,20 +174,20 @@ while(1)
 	 second.join();
 	 awake = 0;
 	 int c;
-	while(1)
-	{
-	     c=loadcell();
-	     cout<<(c-thrs)<<endl;
-	     if((c-thrs)<=weight)
-	     {
-		 motor_Run_time(150000); 
-	     }
-	     if((c-thrs)>weight)
-             {
-	     cout<<"Food set to desired limit"<<endl;
-	     break;
-	     }
-	}     
+	 while(1)
+	 { 
+	 	c=loadcell();
+	     	cout<<(c-thrs)<<endl;
+	     	if((c-thrs)<=weight)
+	     	{
+		motor_Run_time(150000); 
+	     	}
+	     	if((c-thrs)>weight)
+             	{
+	     	cout<<"Food set to desired limit"<<endl;
+	     	break;
+	        }
+	 }     
 	 
 }
 
