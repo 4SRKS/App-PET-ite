@@ -82,6 +82,11 @@ cmake ..
 make
 ./mypjex
 ```
+
+## User Interface
+The user interface is given below. First, the user is promted to enter the weight of food to be dispensed in hours. Then the user is promted to enter the time between subsequent feedings. Then the user is asked verify the data entry.
+<img src="Images/UI1.png" width="280" height="300"> <img src="Images/UI2.png" width="280" height="300">  <img src="Images/UI3.png" width="280" height="300"> <br/>  
+
 ## Team Members
 
 * **Raghul** <br/> 
@@ -123,9 +128,7 @@ Release date - 15th April 2019 <br/>
 
 **Ap-PET-ite v2.0** 
 * Depending on Survey results and general feedback, Version 2 will have following aditional funtionalities  <br/>
-
-**1)** RFID Sensor (MFRC 522) for Pet identification and differentiation to allow feeding to be customized for each pet in a multipet household  <br/>
-and/or
+**1)** RFID Sensor (MFRC 522) for Pet identification and differentiation to allow feeding to be customized for each pet in a multipet household  <br/>and/or  <br/>
 **2)** LCD Screen (ST 7735 128x160 pixel 1.8 inch Display) for the user to input and update the setting directly on to the Ap-PET-ite hardware <br/>
 
 **Ap-PET-ite v3.0**
