@@ -74,7 +74,7 @@ make
 ## Team Members
 
 * **Raghul** - *List of Responsibilties* 
-* **Stuart Shilliday** 
+* **Stuart Shilliday** <br/>
 *Initial Concept Contribution* - Concept pitch presentation <br/>
 *Mechanical Contribution* - Design, manufacture, iteration and assembly.  Step-by-Step Mechanical Assembly Wiki <br/>
 *Social Media Contribution* - YouTube and Facebook pages; photography, videography, video editing and uploading <br/>
