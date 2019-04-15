@@ -110,4 +110,4 @@ PLease participate in this survey to give insight and feedback on Ap-PET-ite for
 
 ## Version
 Ap-PET-ite 1.0
-* Dispenses food of given mass at given intervals, and maintains water level.
+* Dispenses food of given mass at given intervals, and maintains water level, with inputs given from a UI.
