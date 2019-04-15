@@ -103,3 +103,7 @@ https://git.drogon.net/?p=wiringPi;a=summary
 GNU General Public License V3<br/>
 GNU LESSER GENERAL PUBLIC LICENSE V3
 
+## Survey
+https://docs.google.com/forms/d/e/1FAIpQLSdCzQ5AlhaeOhvKFN2g8C_C-drHnjaCQEvHc7EBsoWmiBpvOg/viewform?usp=sf_link
+
+
