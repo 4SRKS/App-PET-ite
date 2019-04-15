@@ -9,10 +9,9 @@
 #include "hx711.cpp"
 #include "main.cpp"
 #include "QApplication"
-#include "QPushButton"
 #include "QtGui"
 #include <QInputDialog>
-#include <QTranslator>
+
 
 using namespace std;
 
