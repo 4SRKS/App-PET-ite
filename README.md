@@ -73,12 +73,14 @@ make
 ```
 ## Team Members
 
-* **Raghul** - *List of Responsibilties* 
+* **Raghul** 
+*Initial Concept Contribution* - App-PET-ite logo <br/>
 * **Stuart Shilliday** <br/>
 *Initial Concept Contribution* - Concept pitch presentation <br/>
 *Mechanical Contribution* - Design, manufacture, iteration and assembly.  Step-by-Step Mechanical Assembly Wiki <br/>
 *Social Media Contribution* - YouTube and Facebook pages; photography, videography, video editing and uploading <br/>
-* **Rabiya Farooq**  
+* **Rabiya Farooq** <br/>
+*Initial Concept Contribution* - Slides for pitch presentation <br/>
 *Programming Contribution-* The ADC (MCP3008), Keypad, Motordrive and threads <br/>
 *Electronic Contribution-* PCB hardware design and testing <br/>
 
