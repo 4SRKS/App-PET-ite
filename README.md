@@ -117,10 +117,12 @@ PLease participate in this survey to give insight and feedback on Ap-PET-ite for
 **Ap-PET-ite v1.0**
 * Dispenses food of given mass at given intervals, and maintains water level, with inputs given from a UI. <br/>
 Release date - 15th April 2019 <br/>
+
 **Ap-PET-ite v2.0** 
 * Depending on Survey results and general feedback, Version 2 will have aditional funtionalities of either including one or both of the following components. <br/>
 **1)** RFID Sensor (MFRC 522) for Pet identification and differentiation to allow feeding to be customized for each pet in a multipet household <br/>
 **2)** LCD Screen (ST 7735 128x160 pixel 1.8 inch Display) for the user to input and update the setting directly on to the Ap-PET-ite hardware <br/>
+
 **Ap-PET-ite v3.0**
 * The last version released will enable hardware control using a Mobile App and will directly update the Pet owner (through the App) incase food or water is running low. 
 
