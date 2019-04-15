@@ -20,7 +20,7 @@ using namespace std;
 **********************************/
 int awake=0;
 
-int abc();
+int loadcell();
 int qt_call ();
 
 /*********************************************************************************
@@ -63,7 +63,7 @@ awake=1;
 void load_cell()
 {
 int d;
-d=abc();
+d=loadcell();
 }
 
 /**********************************************************************************************
@@ -129,47 +129,20 @@ do {
 	
     } while (answer == QMessageBox::No);
  
-//Calling the QT window
-//qt_weight,qt_time = qt_call();
 cout<<qt_weight<< endl<<qt_time<<endl;
- 
- /*First getting the Weight Input
- int weight;
- int status_w;
- while(1){
- weight=Keys_weight();
- status_w=Keys_verify_weight();
- if(status_w==1){
- 		break;}
- }
- cout<<"Weight successfully stored"<<endl;
-
- //Getting the Time Input
- int time;
- int status_t;
- while(1){
- time=Keys_time();
- status_t=Keys_verify_time();
- if(status_t==1){
- 		break;}
- }
- cout<<"Time successfully stored"<<endl;
- */
-usleep(10000);
 int weight, time;
 weight = qt_weight;
 time = qt_time;
 int thrs = 40;
 
 /*****************************************
-* Dispensing the food for the first time
+* Dispensing the food initially
 ******************************************/
  while(1)
 {
 	 int b;
-	 b=abc();
+	 b=loadcell();
 	 cout<<"weight"<<(b-thrs)<<endl;
-	 usleep(1000000);
 	 if((b-thrs)<=weight)
 	 {
 		motor_Run_time(67000); 
@@ -178,43 +151,39 @@ int thrs = 40;
 	 if((b-thrs)>weight)
 	 {
 		 break;
-     }
+         }
  }		 
-		 cout<<"Food set to desired limit"<<endl;
+cout<<"Food set to desired limit"<<endl;
 	
-/********************************
-* Dispensing food once again
-*********************************/
+/**************************************************
+* Dispensing food using threads and continuous mode
+***************************************************/
 while(1)
 {		 
-	         /********************************
-		 * Starting the threads
-		 *********************************/
-		 std::thread first (Timekeeper,time);
-		 std::thread second (Water_Level_Update);
-		 
-		 first.join();
-		 second.join();
-		 usleep(1000000);
-		 awake = 0;
-		 int c;
-	     c=abc();
+	 /********************************
+	 * Starting the threads
+	 *********************************/
+	 std::thread first (Timekeeper,time);
+	 std::thread second (Water_Level_Update);
+
+	 first.join();
+	 second.join();
+	 awake = 0;
+	 int c;
+	while(1)
+	{
+	     c=loadcell();
 	     cout<<(c-thrs)<<endl;
-	     usleep(1000);
 	     if((c-thrs)<=weight)
 	     {
-		 motor_Run_time(67000); 
-		 //usleep(1000);
+		 motor_Run_time(150000); 
 	     }
-	     
-		 //usleep(1000);
-		 if((c-thrs)>weight)
-		 {
-			cout<<"Food set to desired limit"<<endl;
-			
-		 
+	     if((c-thrs)>weight)
+             {
+	     cout<<"Food set to desired limit"<<endl;
+	     break;
 	     }
-	     
+	}     
 	 
 }
 
