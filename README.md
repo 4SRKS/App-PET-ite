@@ -95,7 +95,7 @@ The follwing libraries were used to build the code
 ```
 https://github.com/berndporr/gpio-sysfs
 https://github.com/halherta/RaspberryPi-mcp3008Spi
-Raghul add the library for HX711
+https://github.com/dangrie158/opencushion
 ```
 ## License
 Raghul please add here
