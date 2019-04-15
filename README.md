@@ -87,7 +87,7 @@ make
 * **Raghul** <br/> 
 *Initial Concept Contribution* -App-PET-ite logo <br/>
 2.Load cell setup and configuration<br/>
-3.UI interface, Multithreading, Github repository maintenance.<br/>
+3.UI interface, repository maintenance.<br/>
 4.Integration testing, Unit testing<br/>
 * **Stuart Shilliday** <br/>
 *Initial Concept Contribution* - Concept pitch presentation <br/>
@@ -129,6 +129,6 @@ and/or
 **2)** LCD Screen (ST 7735 128x160 pixel 1.8 inch Display) for the user to input and update the setting directly on to the Ap-PET-ite hardware <br/>
 
 **Ap-PET-ite v3.0**
-* The last version released will enable hardware control using a Mobile App and will directly update the Pet owner (through the App) in case food or water is running low. 
+* The last version will enable an exclusive Mobile App and an ASIC chip and will be marketed for a commercial release.
 
 
