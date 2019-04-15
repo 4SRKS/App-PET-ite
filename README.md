@@ -8,7 +8,7 @@ The basic layout of the project is given in the figure below<br/>
 ![](Images/Overveiw.png)<br/>
 
 ## Project Description<br/>
-The schematic above provides an overview of the project concept. The central component of the project design is a Raspberry Pi. The Pi is connected to peripheral devices that are used to control the food for a given Pet. The concept is not Pet specific and can be used to make an Automatic feeder for popular pets like cats or dogs. The design includes two analog sensors to measure the weight and the water level. These sensors are connected to the Raspberry Pi through an ADC. SPI communication protocol is used to get analog values from the two sensors. A DC motor is controlled using a motor drive circuit that includes a transistor. The user can interact with the Automatic Pet feeder through a user interface.<br/> 
+The schematic above provides an overview of the project concept. The central component of the project design is a Raspberry Pi. The Pi is connected to peripheral devices that are used to control the food for a given Pet. The concept is not Pet specific and can be used to make an Automatic feeder for popular pets like cats or dogs and other smaller pets. The design includes two analog sensors to measure the weight and the water level. These sensors are connected to the Raspberry Pi through an ADC. SPI communication protocol is used to get analog values from the two sensors. A DC motor is controlled using a motor drive circuit. The user can interact with the Automatic Pet feeder through a user interface.<br/> 
 
 
 ## Component List<br/>
@@ -49,7 +49,7 @@ For a full walkthrough of how we assembled the feeder, see the [Step-by-Step Ass
 The first step of the electrical assembly is the PCB Fabrication.
 ### PCB Design <br/>
 ![](Images/PCB_Mounted.png)<br/>
-The figure above gives a preveiw of the PCB design. It is a double layered PCB Design. It includes the circuitry for Water Level Sensor, the ADC (MCP3008), the load cell (HX711), the key pad and the motordrive circuit. The PCB can be fabricated by printing the pdf files in the Double sided PCB folder and then using that layout to make a PCB step-by-step. A tutorial to make a PCB can be found at the following link. For a doubled layered PCB design the alignment of the two layers must be perfect. While aligning PCB use the text on the left bottom as a guide to align the top and bottom halves. For a double sided PCB the process discribed in the tutorial must be repeated twice.<br/>
+The figure above gives a preveiw of the PCB design. It is a double layered PCB Design. It includes the circuitry for Water Level Sensor, the ADC (MCP3008), the load cell (HX711), the key pad and the motordrive circuit. The PCB can be fabricated by printing the pdf files in the Double sided PCB folder and then using that layout to make a PCB step-by-step. A tutorial to make a PCB can be found at the following link. For a doubled layered PCB design the alignment of the two layers must be perfect. While aligning PCB use the text on the bottom as a guide to align the top and bottom halves. For a double sided PCB the process discribed in the tutorial must be repeated twice.<br/>
 ```
 https://maker.pro/pcb/tutorial/how-to-make-a-printed-circuit-board-pcb
 ```
@@ -127,6 +127,6 @@ Release date - 15th April 2019 <br/>
 **2)** LCD Screen (ST 7735 128x160 pixel 1.8 inch Display) for the user to input and update the setting directly on to the Ap-PET-ite hardware <br/>
 
 **Ap-PET-ite v3.0**
-* The last version released will enable hardware control using a Mobile App and will directly update the Pet owner (through the App) incase food or water is running low. 
+* The last version released will enable hardware control using a Mobile App and will directly update the Pet owner (through the App) in case food or water is running low. 
 
 
