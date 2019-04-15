@@ -76,9 +76,9 @@ make
 
 * **Raghul** <br/> 
 *Initial Concept Contribution* - App-PET-ite logo <br/>
-*Contribution - 1.Load cell setup and configuration<br/>
+1.Load cell setup and configuration<br/>
 2.UI interface, Multithreading, Github repository maintenance.<br/>
-3.Integration Testing, Unit testing<br/>
+3.Integration testing, Unit testing<br/>
 * **Stuart Shilliday** <br/>
 *Initial Concept Contribution* - Concept pitch presentation <br/>
 *Mechanical Contribution* - Design, manufacture, iteration and assembly.  Step-by-Step Mechanical Assembly Wiki <br/>
