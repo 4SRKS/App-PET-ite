@@ -98,4 +98,6 @@ https://github.com/halherta/RaspberryPi-mcp3008Spi
 https://github.com/dangrie158/opencushion
 ```
 ## License
-Raghul please add here
+GNU General Public License V3
+GNU LESSER GENERAL PUBLIC LICENSE V3
+
