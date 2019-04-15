@@ -73,7 +73,7 @@ make
 ```
 ## Team Members
 
-* **Raghul** 
+* **Raghul** <br/>
 *Initial Concept Contribution* - App-PET-ite logo <br/>
 * **Stuart Shilliday** <br/>
 *Initial Concept Contribution* - Concept pitch presentation <br/>
