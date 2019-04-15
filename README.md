@@ -104,6 +104,7 @@ GNU General Public License V3<br/>
 GNU LESSER GENERAL PUBLIC LICENSE V3
 
 ## Survey
-https://docs.google.com/forms/d/e/1FAIpQLSdCzQ5AlhaeOhvKFN2g8C_C-drHnjaCQEvHc7EBsoWmiBpvOg/viewform?usp=sf_link
+PLease participate in this survey to give insights and feedbacks on Ap-PET-ite.
+[Ap-PET-ite Survey].(https://docs.google.com/forms/d/e/1FAIpQLSdCzQ5AlhaeOhvKFN2g8C_C-drHnjaCQEvHc7EBsoWmiBpvOg/viewform?usp=sf_link)
 
 
