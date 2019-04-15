@@ -75,7 +75,7 @@ make
 ## Team Members
 
 * **Raghul** <br/> 
-*1.App-PET-ite logo <br/>
+1.App-PET-ite logo <br/>
 2.Load cell setup and configuration<br/>
 3.UI interface, Multithreading, Github repository maintenance.<br/>
 4.Integration testing, Unit testing<br/>
