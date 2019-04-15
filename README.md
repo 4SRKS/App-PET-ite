@@ -84,8 +84,15 @@ make
 ```
 
 ## User Interface
-The user interface is given below. First, the user is promted to enter the weight of food to be dispensed in hours. Then the user is promted to enter the time between subsequent feedings. Then the user is asked verify the data entry. Once the data is entered, the correct amount of food will be dispensed after the specified time intervals for the Pet to enjoy and no further input is needed from the Pet owner after that.
+The user interface is given below. First, the user is promted to enter the weight of food to be dispensed in hours. Then the user is promted to enter the time between subsequent feedings. Then the user is asked verify the data entry. Once the data is entered, the correct amount of food will be dispensed after the specified time intervals for the Pet to enjoy and no further input is needed from the Pet owner after that. <br/>  
 <img src="Images/UI1.png" width="280" height="300"> <img src="Images/UI2.png" width="280" height="300">  <img src="Images/UI3.png" width="280" height="300"> <br/>  
+
+## Reporting a Bug
+Use this link-[App-PET-ite Bug](https://github.com/RabiyaF/App-PET-ite/issues) to contact the team members to fix issues with software. <br/>
+
+## License
+GNU General Public License V3<br/>
+GNU LESSER GENERAL PUBLIC LICENSE V3<br/>
 
 ## Team Members
 
@@ -103,20 +110,6 @@ The user interface is given below. First, the user is promted to enter the weigh
 *Programming Contribution-* The ADC (MCP3008) for water level sensing, 4x4 Matrix Keypad, Motordrive control and threads for Water level sensor and timer <br/>
 *Electronic Contribution-* PCB hardware design and testing <br/>
 
-## Reporting a Bug
-Use this link-[App-PET-ite Bug](https://github.com/RabiyaF/App-PET-ite/issues) to contact the team members to fix issues with software. <br/>
-## Acknowledgements
-The follwing libraries were used to build the code
-```
-https://github.com/berndporr/gpio-sysfs
-https://github.com/halherta/RaspberryPi-mcp3008Spi
-https://github.com/dangrie158/opencushion
-https://git.drogon.net/?p=wiringPi;a=summary
-```
-## License
-GNU General Public License V3<br/>
-GNU LESSER GENERAL PUBLIC LICENSE V3<br/>
-
 ## Survey
 PLease participate in this survey to give insight and feedback on Ap-PET-ite for future releases.<br/>
 [Ap-PET-ite Survey](https://docs.google.com/forms/d/e/1FAIpQLSdCzQ5AlhaeOhvKFN2g8C_C-drHnjaCQEvHc7EBsoWmiBpvOg/viewform?usp=sf_link)
@@ -133,5 +126,14 @@ Release date - 15th April 2019 <br/>
 
 **Ap-PET-ite v3.0**
 * The last version will enable an exclusive Mobile App and an ASIC chip and will be marketed for a commercial release.
+
+## Acknowledgements
+The follwing libraries were used to build the code
+```
+https://github.com/berndporr/gpio-sysfs
+https://github.com/halherta/RaspberryPi-mcp3008Spi
+https://github.com/dangrie158/opencushion
+https://git.drogon.net/?p=wiringPi;a=summary
+```
 
 
