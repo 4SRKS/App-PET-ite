@@ -112,7 +112,7 @@ GNU LESSER GENERAL PUBLIC LICENSE V3<br/>
 * **Rabiya Farooq**<br/> 
 *Initial Concept Contribution* - Slides for pitch presentation <br/>
 *Programming Contribution-* The ADC (MCP3008) for water level sensing, 4x4 Matrix Keypad, Motordrive control and threads for Water level sensor and timer <br/>
-*Electronic Contribution-* PCB hardware design and testing <br/>
+*Electronic Contribution-* Double layered PCB design on Proteus Design Suite Professional v8.7, Soldering, testing and debugging of PCB Hardware <br/>
 
 ## Survey
 PLease participate in this survey to give insight and feedback on Ap-PET-ite for future releases.<br/>
